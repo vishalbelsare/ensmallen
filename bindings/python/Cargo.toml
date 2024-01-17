@@ -44,6 +44,15 @@ indicatif = {version="0.17.0", features = ["rayon"]}
 ctrlc = "3.1.7"
 serde = "1.0"
 serde_json = "1.0"
+# ironprism stuff
+bias_aware_edge_features = {path = "../../ironprism/traits/bias_aware_edge_features"}
+iron_graph = {path = "../../ironprism/traits/graph", package = "graph"}
+custom_iters = {path = "../../ironprism/data_structures/custom_iters"}
+edge_graph_convolution = {path = "../../ironprism/algorithms/edge_graph_convolution"}
+hyper_sketching = {path = "../../ironprism/algorithms/hyper_sketching"}
+edge_weighting = {path = "../../ironprism/algorithms/edge_weighting"}
+vec_matrix = {path = "../../ironprism/data_structures/vec_matrix"}
+matrix = {path = "../../ironprism/traits/matrix"}
 
 [profile.release]
 debug = false             # Include debug info.

@@ -71,10 +71,15 @@ mod weighted_spine;
 pub(crate) use weighted_spine::*;
 mod walks;
 
+mod ironprism;
+pub use ironprism::*;
+
 #[cfg(feature = "register_pymodule")]
 #[pymodule]
 pub fn ensmallen(py: Python, m: &PyModule) -> PyResult<()> {
     register_ensmallen(py, m)?;
+    m.add_class::<EdgeGraphConvolutionPy>()?;
+    m.add_class::<HyperSketchingPy>()?;
     Ok(())
 }
 

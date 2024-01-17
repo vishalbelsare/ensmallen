@@ -1,0 +1,3 @@
+[submodule "ironprism"]
+	path = ironprism
+	url = git@github.com:Ironprism/ironprism.git
