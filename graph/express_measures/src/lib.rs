@@ -1,4 +1,4 @@
-#![feature(core_intrinsics)]
+#![allow(internal_features)]
 mod cosine_similarity;
 mod element_wise_operations;
 mod dot;

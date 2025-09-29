@@ -1,7 +1,6 @@
 use crate::types::*;
 use crate::validation::*;
 use core::fmt::Debug;
-use core::intrinsics::unlikely;
 use core::ops::Mul;
 use rayon::prelude::*;
 use std::iter::Sum;
@@ -127,7 +126,7 @@ where
             let src: usize = src.try_into().unwrap();
             let dst: usize = dst.try_into().unwrap();
 
-            if unlikely(src == dst) {
+            if src == dst {
                 *similarity = F::one();
             }
 
